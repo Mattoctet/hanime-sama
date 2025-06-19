@@ -1,0 +1,14 @@
+[
+  { 
+    "code": "abcd1234", 
+    "titre": "Titre Populaire 1", 
+    "cover": "/cover/abcd1234.jpg",
+    "type": "anime"
+  },
+  { 
+    "code": "exmpl001", 
+    "titre": "Titre Populaire 2", 
+    "cover": "/img/exmpl001.jpg",
+    "type": "manwha"
+  }
+]

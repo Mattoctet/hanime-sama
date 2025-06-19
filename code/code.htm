@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrée Code</title>
+  <link rel="stylesheet" href="../css/ordi/global.css" id="css-global">
+  <script>
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      document.getElementById('css-global').href = "../css/tel/global.css";
+    }
+  </script>
+</head>
+<body>
+  <h1>Entrer un code</h1>
+  <input type="text" id="codeInput" maxlength="8" placeholder="Code (8 caractères)">
+  <button onclick="verifierCode()">Valider</button>
+  <p id="resultat"></p>
+
+  <script>
+    async function verifierCode() {
+      const code = document.getElementById('codeInput').value.trim();
+      const resultat = document.getElementById('resultat');
+
+      if (code.length !== 8) {
+        resultat.textContent = "Erreur : le code doit contenir exactement 8 caractères.";
+        return;
+      }
+
+      const prefix = code.match(/^(a|h|e|pw|m|mw)/);
+      if (!prefix) {
+        resultat.textContent = "Erreur : préfixe invalide.";
+        return;
+      }
+
+      try {
+        const res = await fetch('../data/validcod.json');
+        const data = await res.json();
+        if (!data.codes.includes(code)) {
+          resultat.textContent = "Erreur : code inconnu.";
+        } else {
+          const type = prefix[0];
+          let page = '';
+          if (type === 'a' || type === 'h' || type === 'e' || type === 'pw') {
+            page = '../ex_anime.html';
+          } else if (type === 'mw') {
+            page = '../ex_mw.html';
+          } else if (type === 'm') {
+            page = '../ex_manga.html';
+          }
+          window.location.href = `${page}?code=${code}`;
+        }
+      } catch (err) {
+        resultat.textContent = "Erreur de chargement des codes.";
+      }
+    }
+  </script>
+</body>
+</html>

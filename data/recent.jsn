@@ -1,0 +1,14 @@
+[
+  { 
+    "code": "abcd1234", 
+    "titre": "Titre Récent 1", 
+    "cover": "img/abcd1234.jpg",
+    "type": "anime"
+  },
+  { 
+    "code": "exmpl001", 
+    "titre": "Titre Récent 2",
+    "cover": "img/exmpl001.jpg", 
+    "type": "anime"
+  }
+]

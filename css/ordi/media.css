@@ -1,0 +1,157 @@
+/*/css/ordi/media.css*/
+body {
+    background-color: #212121;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+h1 {
+    color: rgb(175, 175, 175);
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.anime-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(175, 175, 175);
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.anime-card:hover {
+    transform: scale(1.07);
+}
+
+.anime-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.anime-card h3 {
+    margin: 12px 0 8px;
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+}
+
+.fiche-cover {
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+}
+
+.video-lecteur, .iframe-lecteur {
+  width: 100%;        /* prend toute la largeur disponible */
+  max-width: 900px;   /* limite max de largeur */
+  height: 500px;      /* hauteur fixe, modifie selon ton besoin */
+  border-radius: 12px;
+  display: block;
+  margin: 1rem auto;  /* centré horizontalement */
+}
+
+.fiche-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.fiche-cover {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.fiche-cover img {
+  width: 100%;
+  border-radius: 12px;
+  display: block; /* évite les petits bugs d'espacement */
+}
+
+.fiche-texte {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fiche-texte h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.fiche-texte p {
+  margin: 0.5rem 0;
+}
+
+
+#menu-episodes details {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 3px #eee;
+}
+
+#menu-episodes summary {
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.episode-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.episode-list li {
+  margin-bottom: 5px;
+}
+
+.episode-list button {
+  width: 100%;
+  text-align: left;
+  padding: 6px 12px;
+  background-color: rgb(175, 175, 175);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.episode-list button:hover {
+  background-color: #c7c7c7;
+}
+
+#navig button {
+  margin: 10px 8px 0 0;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 1px solid #999;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
+
+#navig button:hover {
+  background-color: #dcdcdc;
+}

@@ -1,0 +1,33 @@
+{
+  "code": "alpha5678",
+  "titre": "Tower of God",
+  "desc": "Un garçon gravit une mystérieuse tour remplie d'épreuves.",
+  "genre": ["fantasy", "aventure", "psychologie"],
+  "cover": "/img/alpha5678.jpg",
+  "saisons": [
+    {
+      "saison": 1,
+      "episodes": [
+        {
+          "ep": 1,
+          "titre": "Ascension",
+          "liens": [
+            "/img/manwha/alpha5678/ep1/page1.jpg",
+            "/img/manwha/alpha5678/ep1/page2.jpg",
+            "/img/manwha/alpha5678/ep1/page3.jpg"
+          ],
+          "lecteur": "images"
+        },
+        {
+          "ep": 2,
+          "titre": "Test du courage",
+          "liens": [
+            "/img/manwha/alpha5678/ep2/page1.jpg",
+            "/img/manwha/alpha5678/ep2/page2.jpg"
+          ],
+          "lecteur": "images"
+        }
+      ]
+    }
+  ]
+}

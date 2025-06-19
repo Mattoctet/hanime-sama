@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemple Manga</title>
+  <link rel="stylesheet" href="css/ordi/global.css" id="css-global">
+  <link rel="stylesheet" href="css/ordi/header.css" id="css-header">
+  <link rel="stylesheet" href="css/ordi/home.css" id="css-page">
+  <script>
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      document.getElementById("css-global").href = "css/tel/global.css";
+      document.getElementById("css-header").href = "css/tel/header.css";
+      document.getElementById("css-page").href = "css/tel/home.css";
+    }
+  </script>
+</head>
+<body>
+  <div id="header-container"></div>
+        <script>
+        fetch("/hanime-sama/header.html")
+            .then(res => res.text())
+            .then(html => {
+            document.getElementById("header-container").innerHTML = html;
+            })
+            .then(() => import("/hanime-sama/js/header.js"));
+        </script>
+  <header><h1>Exemple Manga</h1></header>
+  <main class="home"><p>Contenu de Exemple Manga</p></main>
+</body>
+</html>

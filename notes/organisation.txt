@@ -1,0 +1,55 @@
+Structure du projet hanime-sama.
+hanime-sama/
+├── index.html
+├── header.html
+├── ex_anime.html
+├── ex_manga.html
+├── ex_mw.html
+├── extension.py
+├── data/
+│   ├── code.json
+│   ├── recent.json (acceuil)
+│   ├── popular.json (acceuil)
+│   ├── anime.json (charge tout les animes dispo)
+│   ├── manwha.json (meme que anime pour les manhwa)
+│   ├── manga.json (meme chose)
+│   └── validcod.json
+├── js/
+│   ├── anime.js
+│   ├── dispCode.js
+│   ├── header.js
+│   ├── homepage.js
+│   ├── lecteuri.js
+│   ├── loadCSS.js
+│   ├── manga.js
+│   └── manwha.js
+├── css/
+│   ├── ordi/
+│   │   ├── style.css
+│   │   ├── header.css
+│   │   ├── home.css
+│   │   └── media.css
+│   │
+│   └── tel/
+│       ├── style.css
+│       ├── header.css
+│       ├── home.css
+│       └── media.css
+├── anime/
+│   └── index.html
+│   └── code/
+│       └── code_anime.html
+├── manwha/
+│   └── index.html
+│   └── code/
+│       └── code_manwha.html
+├── partials/
+│   └── lecteuri.html
+├── manga/
+│   └── index.html
+│   └── code/
+│       └── code_manga.html
+└── notes/   
+    ├── organisation.txt
+    └── projet.txt
+    └── README.md

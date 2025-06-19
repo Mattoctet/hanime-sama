@@ -1,0 +1,18 @@
+{
+  "code": "iframeMG",
+  "titre": "Titre Démo",
+  "desc": "Une œuvre exemple pour test.",
+  "genre": ["action", "fantastique"],
+  "cover": "img/abcd1234.jpg",
+  "lecteur": "iframe_vertical",
+  "episodes": [
+    {
+      "ep1":[
+        {
+            "lien1": "https://exemple.com"
+            "lien2": "https://exemple.com"
+        }
+      ]
+    }
+  ]
+}

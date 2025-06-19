@@ -1,0 +1,63 @@
+<!-- index.htm -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/loadcss.js" defer></script>
+    <title>anime-sama Accueil</title>
+</head>
+
+<body>
+    <div id="header-container">
+        <p>Chargement du header...</p>
+    </div>
+
+    <script>
+        fetch("/header.htm")
+            .then(res => {
+                if (!res.ok) throw new Error("Header non trouvé");
+                return res.text();
+            })
+            .then(html => {
+                document.getElementById("header-container").innerHTML = html;
+            })
+            .then(() => import("/js/header.js"))
+            .catch(err => {
+                document.getElementById("header-container").innerHTML = `<h1>Erreur</h1><p>${err.message}</p>`;
+            });
+    </script>
+
+    <main>
+        <h1>Bienvenue sur Hanime-sama</h1>
+
+        <section class="horizontal-scroll">
+            <h2>Derniers épisodes</h2>
+            <div class="scroll-container" id="recent"></div>
+        </section>
+
+        <section class="horizontal-scroll">
+            <h2>Populaires</h2>
+            <div class="scroll-container" id="popular"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>hanime-sama.fr © 2025</p>
+    </footer>
+
+    <script src="/js/homepage.js"></script>
+<div id="remonte-container"></div>
+<script>
+  fetch("/part/remonte.htm")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("remonte-container").innerHTML = html;
+    })
+    .then(() => import("/js/remonte.js"));
+</script>
+
+</body>
+
+</html>

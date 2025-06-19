@@ -1,0 +1,33 @@
+{
+  "code": "abcd1234",
+  "titre": "High School DxD",
+  "desc": "Un anime populaire rempli d'action et d'humour.",
+  "genre": ["action", "ecchi", "fantastique"],
+  "cover": "/cover/abcd1234.jpg",
+  "lecteur": "iframe",
+  "saisons": [
+    {
+      "saison": 1,
+      "episodes": [
+        {
+          "ep": 1,
+          "titre": "Début explosif",
+          "lien": "https://1drv.ms/v/c/7ebd6c0aac94f3f4/IQTMQEwo3WGESK43CSxhBahTAYJ5WtfOzWlY5aXPo1gX8Zc?width=1920&height=1080",
+          "lecteur": "iframe"
+        },
+        {
+          "ep": 2,
+          "titre": "La suite",
+          "lien": "https://1drv.ms/v/c/7ebd6c0aac94f3f4/IQSvEMyvaII_RomyHcxoQbTBAdXMQbL-nD79AZ27YeDocws?width=1920&height=1080",
+          "lecteur": "iframe"
+        },
+        {
+          "ep": 3,
+          "titre": "La sute",
+          "lien": "https://1drv.ms/v/c/7ebd6c0aac94f3f4/IQTGHH8AxySHTpd70cQoDGJzAeBaSz65JW00hDU2njlcyyY?width=1920&height=1080",
+          "lecteur": "iframe"
+        }
+      ]
+    }
+  ]
+}

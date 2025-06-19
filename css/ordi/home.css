@@ -1,0 +1,14 @@
+/*/css/ordi/home.css*/
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.horizontal-scroll h2 {
+    font-weight: 600;
+}
+
+.scroll-container {
+    scrollbar-color: rgb(175,175,175) transparent;
+}
